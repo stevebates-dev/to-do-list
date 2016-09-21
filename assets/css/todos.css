@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+100;Blue+3D+%23+16 */
+  background: #3dcce1; /* Old browsers */
+  background-image: linear-gradient(to right, #3dcce1, #e9eeca);
+  font-family: 'Open Sans', sans-serif;
+}
+
+#to-do-container{
+  margin: 75px auto 0px auto;
+  max-width: 400px;
+}
+
+#to-do-header {
+  overflow: auto;
+  background-color: steelblue;
+}
+
+h1 {
+  color: white;
+}
+
+#to-do-title {
+  float: left;
+  padding-left: 10px;
+}
+
+#plus-button {
+  float: right;
+}
+
+input[type="text"] {
+  border: none;
+  font-size: 1.2em;
+  padding: 12px;
+  background-color: rgb(247, 247, 247);
+}
+
+.plus-icon{
+  vertical-align: middle;
+  color: white;
+}
+
+.header-items {
+  margin: 5px;
+}
+
+#new-todo {
+  width: 100%;
+}
+
+.list-group-item {
+  padding: 0;
+}
+
+.btn-danger {
+  border-radius: 0;
+}
+
+#to-do-span {
+  margin: 5px;
+}
+
+ul li:nth-child(even){
+  background-color: rgb(247, 247, 247);
+}
+
+.strike {
+  text-decoration: line-through;
+  color: rgb(150, 150, 150);
+}
+
+li.list-group-item {
+    padding: 10px;
+    border: none;
+}
+
+.list-group-item:first-child {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.list-group-item:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+
