@@ -5,91 +5,81 @@
 }
 
 body {
-  margin: 0;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+100;Blue+3D+%23+16 */
+  /*margin: 0;*/
   background: #3dcce1; /* Old browsers */
   background-image: linear-gradient(to right, #3dcce1, #e9eeca);
-  font-family: 'Open Sans', sans-serif;
-}
-
-#to-do-container{
-  margin: 75px auto 0px auto;
-  max-width: 400px;
-}
-
-#to-do-header {
-  overflow: auto;
-  background-color: steelblue;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
   color: white;
+  padding: 10px 20px;
+  font-weight: normal;
+  font-size: 24px;
+  background: steelblue;
+  margin: 0;
 }
 
-#to-do-title {
-  float: left;
-  padding-left: 10px;
-}
-
-#plus-button {
-  float: right;
-}
-
-input[type="text"] {
-  border: none;
-  font-size: 1.2em;
-  padding: 12px;
-  background-color: rgb(247, 247, 247);
-}
-
-.plus-icon{
-  vertical-align: middle;
-  color: white;
-}
-
-.header-items {
-  margin: 5px;
-}
-
-#new-todo {
+input {
+  border: 3px solid rgba(0,0,0,0);
+  font-size: 18px;
   width: 100%;
-}
-
-.list-group-item {
-  padding: 0;
-}
-
-.btn-danger {
-  border-radius: 0;
-}
-
-#to-do-span {
-  margin: 5px;
-}
-
-ul li:nth-child(even){
   background-color: rgb(247, 247, 247);
+  padding: 13px 13px 13px 20px;
+}
+
+ul {
+  list-style: none;
+  background-color: rgb(247, 247, 247);
+}
+
+li {
+  height: 40px;
+  color: #666;
+  text-decoration: none;
+  line-height: 40px;
+}
+
+span {
+  background: #C9302C;
+  color: white;
+  height: 40px;
+  margin-right: 20px;
+  width: 0px;
+  display: inline-block;
+  text-align: center;
+  transition: 0.2s linear;
+  opacity: 0.0;
+}
+
+input:focus {
+  background: #fff;
+  border: 3px solid steelblue;
+  outline: none;
+}
+
+li:hover span{
+  width: 40px;
+  opacity: 1.0;
+}
+
+li:nth-child(odd){
+  background-color: rgb(255, 255, 255);
+}
+
+#to-do-container{
+  margin: 100px auto;
+  max-width: 360px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.fa-plus {
+  float: right;
 }
 
 .strike {
   text-decoration: line-through;
-  color: rgb(150, 150, 150);
-}
-
-li.list-group-item {
-    padding: 10px;
-    border: none;
-}
-
-.list-group-item:first-child {
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
-}
-
-.list-group-item:last-child {
-  margin-bottom: 0;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+  color: gray;
 }
 
 
